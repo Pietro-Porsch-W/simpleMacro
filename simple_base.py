@@ -1,10 +1,10 @@
 #base imports to be used when creating the Macros module
-from pyautogui import *
+from pyautogui import *   # A lot of things
 import pyautogui          # To locate pixels in the screen
 import time               # To be able to give delay between actions
 import keyboard           # To be able to Use the keyboard actions
-import random             # To give random values, give a more human apearance for certain actions that requiere
-import win32api, win32con # To be able to use the Mouse events, a windows API, faster than the Pythion API
+import random             # To give random values, may have a more human apearance for certain actions that requiere it
+import win32api, win32con # To be able to use the Mouse events of a windows API, faster than the Python API
 # Could use pyautogui to click, but as said, Windows API is WAY faster
 
 #Defines a "procedure" or a "function" to be called, receiving X and Y
