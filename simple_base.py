@@ -9,7 +9,7 @@ import win32api, win32con # To be able to use the Mouse events, a windows API, f
 
 #Defines a "procedure" or a "function" to be called, receiving X and Y
 def click(x,y):
-    win32api.SetCursorPos((x,y))                            #set the cursor at X, Y coordinates
+    win32api.SetCursorPos(x,y)                            #set the cursor at X, Y coordinates
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) # defines a event to happen, pressing the left button
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)   # defines a event to happen, unpressing the left button
 
