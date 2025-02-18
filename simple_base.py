@@ -1,3 +1,24 @@
+#To install all the dependencies
+""" 
+pip install pyinstaller
+pip install pyautogui
+pip install time
+pip install pyinstaller
+pip install keyboard
+pip install random
+pip install pywin32
+"""
+
+# To turn into a executable, make a .exe file with the command line in your CMD or VSCODE environment, add directories if needed:
+""" 
+pyinstaller --onefile YOUR_ARCHIVE.py
+"""
+
+# To Run it locally, use the command line in your CMD or VSCODE environment, add directories if needed:
+"""
+python YOUR_ARCHIVE.py
+"""
+
 #base imports to be used when creating the Macros module
 from pyautogui import *   # A lot of things
 import pyautogui          # To locate pixels in the screen
@@ -27,3 +48,18 @@ import pyautogui
 pyautogui.displayMousePosition()
 
 
+import tkinter as tk
+
+def button_click():
+    print("Botão clicado!")
+
+# Criando a janela principal
+root = tk.Tk()
+root.title("App com Botões")
+
+# Criando um botão na janela
+button = tk.Button(root, text="Clique Aqui", command=button_click)
+button.pack(padx=20, pady=10)
+
+# Executando o loop principal da aplicação
+root.mainloop()
