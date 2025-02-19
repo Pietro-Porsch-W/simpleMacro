@@ -16,19 +16,33 @@ This is a tutorial for installing and using the code, shall be used in your own 
 
 2. Open CMD with ADM privilege to instal with PIP command, list below:
 ```
-pip install pywin32
-pip install keyboard
+pip install pyinstaller
 pip install pyautogui
-pip install opencv-python
+pip install time
+pip install pyinstaller
+pip install keyboard
+pip install random
+pip install pywin32
 ```
-> Caso de erro ao pegar a posição do mouse instale o pillow
+> if you get any error, install pillow
 >
-> Pynput verifica se o mouse foi pressionado
+> Pynput verify if the mouse was pressed
 
 ```
 pip install Pillow 
 pip install pynput
 ```
+3. You can also create .exe file with the following code:
+
+```
+pyinstaller --onefile YOUR_ARCHIVE.py
+```
+
+4. Or you can run locally:
+```
+python YOUR_ARCHIVE.py
+```
+
 > Can update python pip if wanted, but not required, command will be: python.exe ```-m pip install```  ```--upgrade pip```
 
 3. After this, you shall use the rest of the code or just do whatever you want with it.
