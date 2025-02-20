@@ -2,8 +2,7 @@
 """ 
 pip install pyinstaller
 pip install pyautogui
-pip install time
-pip install pyinstaller
+pip install time    
 pip install keyboard
 pip install random
 pip install pywin32

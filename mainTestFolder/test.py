@@ -1,12 +1,11 @@
-#base imports to be used when creating the Macros module
-#import pyautogui          # To locate pixels in the screen
 from pyautogui import *   # A lot of things
 import time               # To be able to give delay between actions
 import keyboard           # To be able to Use the keyboard actions
 import random             # To give random values, may have a more human apearance for certain actions that requiere it
 import tkinter as tk 
-import win32api #pip install py
-import win32con 
+import win32api
+import win32con
+ 
  
 # Lista global para armazenar os cliques e teclas salvas (x, y, botão, teclas)
 cliques_salvos = []
@@ -66,7 +65,7 @@ def save_coordinates():
             print(f"Tecla Salva: {key}")
             time.sleep(0.2)
 
-def stop_recording(event):
+def stop_recording(event=None):
     global recording
     recording = False
     print("Gravação encerrada.")
